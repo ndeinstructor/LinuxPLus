@@ -1,0 +1,56 @@
+DESCRIPTION:
+
+Text based digital 'FirstName LastName Phone Date-Recorded' records
+Stored in home directory of each user
+ filename is fone  or ~/fone to be exact
+
+USAGE for each command: 
+ fonemenu
+   foneadd [first [last [number]]]
+	 fonefind [anyString]
+	 fonedel  [anyString]
+	 fonemod
+	 foneview
+
+VERSION: 2019-11-06
+
+FILES provided in tarball:
+
+.
+├── BCK
+│   ├── foneadd.v1
+│   ├── foneadd.v2
+│   ├── foneadd.v3
+│   ├── foneadd.v4
+│   ├── foneadd.v5
+│   ├── foneadd.v5.1
+│   ├── fonedel.v2.1
+│   ├── fonefind.v1
+│   ├── fonefind.v2
+│   └── fonemenu.v2
+├── foneadd
+├── fonedel
+├── fonefind
+├── fonemenu
+├── fonemod
+├── fone-progs-191106.tgz
+├── fone.README
+├── foneview
+└── hello.c
+
+STEPS TO CONFIGURE YOUR HOST WITH fone*
+
+You need to make the following files available as executables in
+  /usr/local/bin
+
+foneadd
+fonedel
+fonefind
+fonemenu
+fonemod
+foneview
+
+Switch to root or use sudo to do the following:
+  [sudo] cp fone* /usr/local/bin; chmod 755 /usr/local/bin/fone*
+
+

@@ -1,0 +1,4 @@
+# must be run as root, hence the sudo
+THISDIR=$PWD  # directory of user running this program
+sudo cp $PWD/fone{add,menu,mod,del,find,view} /usr/local/bin
+

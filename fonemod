@@ -1,0 +1,14 @@
+#!/bin/bash
+# fonemod -- update a record in ~/fone
+# v1 - edit the file with vi
+vi ~/fone
+exit
+# skipping the code blow
+if [ "$1" = "" ]
+ then
+  echo -n "Find what? : " ; read ANS
+ else
+  ANS="$1"
+fi
+grep -i "$ANS" ~/fone
+
